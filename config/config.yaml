@@ -68,37 +68,28 @@ platforms:
   sources:
     - id: "toutiao"
       name: "今日头条"
-      expected_domain: "toutiao.com"
     - id: "baidu"
       name: "百度热搜"
-      expected_domain: "baidu.com"
     - id: "wallstreetcn-hot"
       name: "华尔街见闻"
-      expected_domain: "wallstreetcn.com"
     - id: "thepaper"
       name: "澎湃新闻"
-      expected_domain: "thepaper.cn"
     - id: "bilibili-hot-search"
       name: "bilibili 热搜"
-      expected_domain: "bilibili.com"
     - id: "cls-hot"
       name: "财联社热门"
-      expected_domain: "cls.cn"
     - id: "ifeng"
       name: "凤凰网"
-      expected_domain: "ifeng.com"
     - id: "tieba"
       name: "贴吧"
-      expected_domain: "baidu.com"
     - id: "weibo"
       name: "微博"
-      expected_domain: "weibo.com"
     - id: "douyin"
       name: "抖音"
-      expected_domain: "douyin.com"
     - id: "zhihu"
       name: "知乎"
-      expected_domain: "zhihu.com"
+    - id: "xiaohongshu"
+      name: "小红书"
 
 
 
@@ -245,7 +236,7 @@ display:
   # 独立展示区：将指定平台/RSS 完整展示，不受关键词过滤
   # 推送展示由 regions.standalone 控制，AI 分析由 ai_analysis.include_standalone 控制
   standalone:
-    platforms: ["zhihu", "wallstreetcn-hot"]     # 热榜平台 ID 列表（如 ["zhihu", "weibo"]）
+    platforms: ["zhihu","douyin","xiaohongshu"] # 热榜平台 ID 列表（如 ["zhihu", "weibo"]）
     rss_feeds: []                                # RSS 源 ID 列表（如 ["hacker-news"]）
     max_items: 20                                # 每个源最多展示条数（0=不限制）
 
